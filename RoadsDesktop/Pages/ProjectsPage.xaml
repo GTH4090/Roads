@@ -11,6 +11,7 @@
 
     <Page.Resources>
         <CollectionViewSource x:Key="projectViewSource" d:DesignSource="{d:DesignInstance {x:Type Models:Project}}"/>
+        
         <CollectionViewSource x:Key="projectHistoryViewSource" d:DesignSource="{d:DesignInstance {x:Type Models:ProjectHistory}}"/>
     </Page.Resources>
 
