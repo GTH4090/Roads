@@ -1,0 +1,40 @@
+﻿<Window x:Class="RoadsDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoadsDesktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="800" MinHeight="720" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BackBtn" Content="Назад" Click="BackBtn_Click"/>
+
+        <Button x:Name="ExitBtn" Content="Выход" HorizontalAlignment="Right" Grid.Column="1" Click="ExitBtn_Click"/>
+
+        <Label Width="Auto" Grid.Column="1" x:Name="TitleLb"/>
+
+        <Image Grid.Column="1" HorizontalAlignment="Left" Width="70"/>
+
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.RowSpan="2">
+            <Button x:Name="EmployeeBtn" Content="Справочник сотр." Click="EmployeeBtn_Click"/>
+            <Button x:Name="LearningsBtn" Content="Календарь обучений" Click="LearningsBtn_Click"/>
+            <Button x:Name="MissesBtn" Content="Пропуски" Click="MissesBtn_Click"/>
+            <Button x:Name="ProjectBtn" Content="Проекты" Click="ProjectBtn_Click"/>
+        </StackPanel>
+
+        <Frame Grid.Row="1" Grid.Column="1" x:Name="UserFrame" NavigationUIVisibility="Hidden" Navigated="UserFrame_Navigated" Source="/Pages/Auth.xaml"/>
+
+        <Frame Grid.Row="2" Grid.Column="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated" Source="/Pages/EmployeeList.xaml"/>
+    </Grid>
+</Window>

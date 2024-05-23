@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ff9c519baaac47658f805e9336228812" Name="Diagram1">
+        <EntityTypeShape EntityType="RoadsDbModel.Area" Width="1.5" PointX="8.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Employee" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Event" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Material" Width="1.5" PointX="10.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.MaterialType" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Meeting" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Member" Width="1.5" PointX="7.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Miss" Width="1.5" PointX="8.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Reason" Width="1.5" PointX="6" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Responsible" Width="1.5" PointX="7.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Role" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Status" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Subdivision" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsDbModel.Type" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="RoadsDbModel.FK_Material_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Employee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Employee_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Employee_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Employee_Subdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Event_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Material_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Meeting_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Member_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Miss_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Miss_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Responsible_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Event_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Event_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Material_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Member_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Responsible_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Material_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Miss_Reason" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsDbModel.FK_Subdivision_Subdivision" />
+        <EntityTypeShape EntityType="RoadsDbModel.News" Width="1.5" PointX="5.25" PointY="15.125" />
+        <AssociationConnector Association="RoadsDbModel.FK_News_Employee" />
+        <EntityTypeShape EntityType="RoadsDbModel.Project" Width="1.5" PointX="13.625" PointY="4.75" />
+        <EntityTypeShape EntityType="RoadsDbModel.ProjectHistory" Width="1.5" PointX="15.875" PointY="3.5" />
+        <EntityTypeShape EntityType="RoadsDbModel.ProjectStatus" Width="1.5" PointX="10.375" PointY="1.5" />
+        <AssociationConnector Association="RoadsDbModel.FK_Project_Employee" />
+        <AssociationConnector Association="RoadsDbModel.FK_Project_ProjectStatus" />
+        <AssociationConnector Association="RoadsDbModel.FK_ProjectHistory_Project" />
+        <AssociationConnector Association="RoadsDbModel.FK_ProjectHistory_ProjectStatus" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
